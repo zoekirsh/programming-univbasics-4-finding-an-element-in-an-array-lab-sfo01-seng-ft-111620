@@ -29,7 +29,7 @@ find the position of a value.
 
 For this lab's tests, assume all arrays are sets of **positive integers**. The
 method and parameter names are already provided for you in
-`lib/array_methods.rb`. Your task is to write the implementation.
+`lib/find_in_array.rb`. Your task is to write the implementation.
 
 ## Finding Where an Element is Located on an Array
 

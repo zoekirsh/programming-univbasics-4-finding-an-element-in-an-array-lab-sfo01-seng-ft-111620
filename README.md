@@ -47,6 +47,10 @@ this on your own.
 
 ..
 
+..
+
+..
+
 ## Solving this Lab
 
 In previous labs, we used loops to use or modify elements in an array. This

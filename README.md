@@ -16,13 +16,13 @@ real life. You might realize that you've been working with Arrays all the time!
 * "Is there a doctor in the house?"
 * Do all of the dogs have their rabies vaccination?
 * Who is the fastest runner?
-* What is lowest temperature Maui will see during my vacation?
+* What is the lowest temperature Maui will see during my vacation?
 
-Given an Array with the appropriate data, you now have the ability to loop
-through it and return the critical bit of information.
+Given an Array with the appropriate data, you now can loop through it and return
+the critical bit of information.
 
 We're going to practice working with arrays and loops in a bit more depth. We
-will be using them to implement a common pattern: looping through an array to
+will be using them to implement a typical pattern: looping through an array to
 find the position of a value.
 
 ## Instructions
@@ -40,9 +40,9 @@ this method should return `nil`.
 
 To implement this method, you will need loop over the provided array and compare
 each value in the array to the value provided. Remember though, that this is
-_not_ the value that needs to be returned
+_not_ the value that needs to be returned.
 
-A walkthrough for this lab is provided below, but try your best to first solve
+A walkthrough for this lab is provided below, but first, try your best to solve
 this on your own.
 
 ..
@@ -63,9 +63,9 @@ def find_element_index(array, value_to_find)
 end
 ```
 
-This will let us loop through the provided array. We can access each element
-with `array[count]` starting with `array[0]`. We now need to write code that
-will compare each array element to `value_to_find`. For now, we can simply
+The above code will let us loop through the provided array. We can access each
+element with `array[count]` starting with `array[0]`. We now need to write code
+that will compare each array element to `value_to_find`. For now, we can simply
 `puts` the result of this comparison:
 
 ```rb
@@ -128,15 +128,15 @@ end
 In this example, we start by assigning `found_value_index` to `nil`. The second
 test in this lab expects `find_element_index` to return `nil` if no match is
 found. The way we've set this method up, `found_value_index` will continue to
-equal `nil` _until_ a match is found. Durinv every loop, if `array[count]` is
+equal `nil` _until_ a match is found. During every loop, if `array[count]` is
 equal to `value_to_find`, `found_value_index` is set to the current `count`. At
 the end, `found_value_index` is returned.
 
 This is a valid solution to this lab. There are, however, other solutions that
-actually behave slightly differently. In the above solution, for instance, the
-code will _always_ loop through the entire array. Another thing to notice - if
-the provided array has repeating values that match the value to find, this
-solution will return the _last_ matching index.
+behave slightly differently. In the above solution, for instance, the code will
+_always_ loop through the entire array. Another thing to notice - if the
+provided array has repeating values that match the value to find, this solution
+will return the _last_ matching index.
 
 A slightly modified solution changes this:
 
@@ -189,9 +189,10 @@ Though in a real coding situation, this method would be redundant - we would
 skip writing a custom method and use `array.index` directly.
 
 You might ask - why do we learn the loop way if something exists that does this
-work for us? The main reason is that building our own version allows us to
-understand and appreciate how something works. There is no magic. Building helps
-you visualize what happens when a method like `.index` is called.
+work for us? The main reason is that implementing our own version allows us to
+understand and appreciate how something works. There is no magic. By writing the
+code, you will be able to better visualize what happens when a method like
+`.index` is called.
 
 Building our own versions is also useful for times when you need to do something
 that doesn't quite work with the existing tools.

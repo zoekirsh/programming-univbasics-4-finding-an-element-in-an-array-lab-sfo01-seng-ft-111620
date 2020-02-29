@@ -45,7 +45,11 @@ _not_ the value that needs to be returned.
 A walkthrough for this lab is provided below, but first, try your best to solve
 this on your own.
 
-..
+...
+
+...
+
+...
 
 ## Solving this Lab
 
